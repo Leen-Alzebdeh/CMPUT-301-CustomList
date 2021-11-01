@@ -56,11 +56,12 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
+
     /**
      *this function will add a city object to the list
      * @param city
      */
     public void addCity(City city){
-        return;
+        cities.add(city);
     }
 }
