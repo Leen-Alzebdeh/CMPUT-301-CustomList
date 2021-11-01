@@ -43,5 +43,11 @@ public class TestCityList {
         assertEquals(list.getCount(), listSize);
     }
 
-
+    @Test
+    public void getCountTest(){
+        assertEquals(list.getCount(), 0);
+        City city = new City("Halifax", "NS");
+        list.addCity(city);
+        assertEquals(list.getCount(), 1);
+    }
 }
